@@ -1,8 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    /* text-decoration: none;
-    list-style: none; */
     box-sizing: border-box;
 }
 body{
@@ -22,14 +20,14 @@ body{
 
 }
 .container::before{
-    border: 2px solid white;
+    border: 2px solid black;
     content: "";
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     top: 0px;
     right: 0px;
-    transition: 1.9s;
+    transition: 1.5s;
     background: linear-gradient(50deg,rgb(202, 188, 32),rgb(155, 25, 101));
     transform: rotate(-45deg)translate(0,-100px);
 
@@ -38,10 +36,10 @@ body{
     border: 2px solid black;
     width: 300px;
     height: 300px;
-    background-color: rgb(195, 67, 13);
+    background-color: rgb(195, 67, 20);
     margin: auto;
     background-image: url(../TECHPHOTO/era.jpg);
-    box-shadow: 20px 10px 10px;
+    box-shadow: 20px 10px 12px;
     display: grid;
     border-radius: 1cm;
     z-index: 1;
@@ -50,14 +48,14 @@ body{
     text-align: center;
     cursor: pointer;
     overflow: hidden;
-    transition: .5s ease;
+    transition: .4s ease;
 
 }
 .cards:hover{
     color: #200571;
 }
 .container:hover::before{
-    animation: effect 2s;
+    animation: effect 3s;
 }
 @keyframes effect{
     100%{
